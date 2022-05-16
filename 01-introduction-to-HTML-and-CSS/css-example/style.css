@@ -1,0 +1,22 @@
+/* #news{ */
+article p b {
+  background-color: red;
+}
+
+article .text{
+    color: green;
+}
+
+#article-name{
+    color: blue;
+    font-size: 42px;
+}
+
+.target{
+    display: inline-block;
+    background-color: green;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+}
