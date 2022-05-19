@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <span> MyLogo </span>
+
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section>
+        <form action="/" method="POST">
+          <label for="firstname">First name</label>
+          <input id="firstname" name="firstname" type="text" required />
+
+          <label for="lastname">Last name</label>
+          <input
+            id="lastname"
+            name="lastname"
+            type="text"
+            value="Petrov"
+            disabled
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="johndoe@mail.com"
+          />
+
+          <div>
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" step="0.2" min="1" />
+          </div>
+
+          <div>
+            <label>Gender</label>
+            <label for="gender-male">Female</label>
+            <input
+              checked
+              type="radio"
+              name="gender"
+              value="Male"
+              id="gender-male"
+              placeholder="Male"
+            />
+
+            <label for="gender-female">Male</label>
+            <input
+              type="radio"
+              name="gender"
+              value="Female"
+              id="gender-female"
+            />
+          </div>
+
+          <div>
+            <label>Your hobbies</label>
+            <label for="hobby-music">Music</label>
+            <input checked type="checkbox" name="hobby" id="hobby-music" />
+
+            <label for="hobby-books">Books</label>
+            <input type="checkbox" name="hobby" id="hobby-books" />
+
+            <label for="hobby-biking">Biking</label>
+            <input type="checkbox" name="hobby" id="hobby-biking" />
+          </div>
+
+          <div>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+              <option value="39">39 EU</option>
+              <option value="40">40 EU</option>
+              <option value="41.5" selected>41.5 EU</option>
+            </select>
+          </div>
+
+          <label for="message">Leave a message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+          <button>SUBMIT</button>
+          <button type="reset">RESET</button>
+          <button type="button">CLICK</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Table example</h2>
+
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Original URL</th>
+              <th>Visits</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>https://nakov.com</td>
+              <td>160</td>
+            </tr>
+            <tr>
+              <td>https://simo.com</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>260</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+
+    <footer>My Website &copy All Rights Reserved - 2022</footer>
+  </body>
+</html>
