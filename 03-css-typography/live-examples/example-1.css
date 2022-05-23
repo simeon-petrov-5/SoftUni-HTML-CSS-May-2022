@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Smooch";
+  src: url("Smooch-Regular.ttf");
+}
+
+h1 {
+  /* color: red; */
+  font-family: "Smooch";
+}
+
+p {
+  font-family: "Odibee Sans", cursive;
+}
+
+section {
+  font-size: 18px;
+}
+
+#p1 {
+  font-size: 1.5em;
+  color: red;
+}
+#p2 {
+  font-size: 1.5em;
+  color: green;
+}
+#p3 {
+  font-size: 1.5em;
+  color: orange;
+}
+
+.example {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  width: 60px;
+  background-color: rgba(125, 125, 255, 0.5);
+  color: black;
+  font-weight: bold;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: wrap;
+
+  word-break: break-all;
+  opacity: 0.5;
+}
