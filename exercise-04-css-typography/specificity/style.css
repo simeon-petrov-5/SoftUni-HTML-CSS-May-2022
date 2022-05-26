@@ -1,0 +1,20 @@
+p {
+  color: orangered;
+}
+
+p.first {
+  color: green;
+  font-weight: bold;
+}
+
+ul #one .first.first {
+  background-color: coral;
+}
+ul #one .first {
+  background-color: lightgreen;
+}
+
+
+p ul ol{
+    
+}
