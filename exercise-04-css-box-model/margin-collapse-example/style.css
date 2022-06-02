@@ -10,3 +10,8 @@
   margin: 48px 0;
   background-color: lightskyblue;
 }
+
+.divider{
+  height: 1px;
+  background-color: black;
+}
