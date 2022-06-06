@@ -1,0 +1,15 @@
+.container {
+  border: 1px dashed black;
+  background-color: lightsalmon;
+  width: 500px;
+  height: 600px;
+  position: relative;
+}
+
+.container img {
+  width: 300px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

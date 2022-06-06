@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Position</title>
+  </head>
+  <body>
+    <h2>Position's properties - Top/Left/Right/Bottom</h2>
+
+    <p class="example-sides">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <span class="moved">Tempore</span> tempora fuga iste rerum dolorem iusto
+      itaque eum alias voluptate. Assumenda amet labore enim sunt harum
+      quibusdam reprehenderit quo, officia modi.
+    </p>
+
+    <h2>Static</h2>
+    <section class="example static">
+      <div class="first-element">First element</div>
+      <div class="second-element">Second element</div>
+    </section>
+
+    <h2>Relative</h2>
+    <section class="example relative">
+      <div class="first-element">First element</div>
+      <div class="second-element">Second element</div>
+    </section>
+
+    <h2>Absolute</h2>
+    <section class="example absolute">
+      <div class="first-wrapper">
+        <div class="second-wrapper">
+          <div class="first-element">First element</div>
+          <div class="second-element">Second element</div>
+        </div>
+      </div>
+    </section>
+
+    <h2>Fixed</h2>
+    <section class="example fixed">
+      <div class="first-element">First element - FIXED</div>
+      <div class="second-element">Second element</div>
+    </section>
+
+    <h2>Sticky</h2>
+    <section class="example sticky">
+      <div class="first-element">First element - STICKY</div>
+      <div class="second-element">Second element</div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit
+        ullam eveniet illum reiciendis ut reprehenderit cum! Porro odio in magni
+        corrupti, sapiente rerum possimus repellendus, impedit id nobis facere?
+        Incidunt corporis illum quae debitis natus, repudiandae consequatur
+        reprehenderit facilis atque nesciunt in tenetur commodi magnam eius enim
+        veniam, dicta, dolorem veritatis obcaecati voluptatum iure
+        necessitatibus. Illo mollitia laboriosam pariatur. Tempore inventore
+        ducimus eaque maxime, nam eos voluptatibus, qui ipsa laborum modi in sit
+        accusamus dignissimos repudiandae deleniti perferendis beatae quaerat
+        quam deserunt amet minus sequi, aperiam nisi eveniet. Accusantium.
+        Adipisci quisquam nulla consequatur neque reprehenderit incidunt quia
+        autem labore quis eaque sed, obcaecati fugiat facere inventore odio.
+        Quos quisquam enim, sapiente veritatis eius nostrum quae. Quo provident
+        dolore quae! Molestias, sapiente nesciunt. Ab, quaerat voluptatem iste
+        nisi eveniet architecto beatae facere ea quidem repellendus ratione
+        tenetur amet voluptas commodi provident at corrupti iure laudantium
+        odit. Inventore voluptates accusamus aperiam? Cum laborum minus
+        accusamus sequi inventore iure possimus, harum provident corporis
+        voluptate, obcaecati repudiandae id et eveniet dolorem, distinctio porro
+        veritatis iste repellat voluptatum? Aliquam fuga nam praesentium qui
+        atque. Mollitia id explicabo officia quisquam eligendi vitae omnis
+        obcaecati nostrum molestias! Quidem nulla laudantium iste iure? Quas
+        itaque dolor neque dolores modi id nemo, magnam ab ipsam perferendis
+        rerum alias. Molestiae odio perferendis odit, eos commodi aperiam
+        quisquam maiores vitae quas vero minus error itaque voluptatibus quam
+        corporis vel ipsam laudantium enim mollitia consequuntur provident et
+        esse quo. Vero, provident. Facilis nihil, iusto illum assumenda incidunt
+        nostrum sed officia architecto cupiditate ad soluta quod error
+        laboriosam fugit in molestiae suscipit illo. Libero dolorem quas
+        voluptate voluptatem, mollitia cupiditate pariatur optio. Dolore
+        voluptatem rem laboriosam! Id aspernatur enim veniam nulla magni,
+        possimus, voluptas totam accusantium laborum illum facere minima vitae
+        quis dolore reprehenderit ad est omnis repudiandae fugiat, sunt minus.
+        Autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+        velit ullam eveniet illum reiciendis ut reprehenderit cum! Porro odio in
+        magni corrupti, sapiente rerum possimus repellendus, impedit id nobis
+        facere? Incidunt corporis illum quae debitis natus, repudiandae
+        consequatur reprehenderit facilis atque nesciunt in tenetur commodi
+        magnam eius enim veniam, dicta, dolorem veritatis obcaecati voluptatum
+        iure necessitatibus. Illo mollitia laboriosam pariatur. Tempore
+        inventore ducimus eaque maxime, nam eos voluptatibus, qui ipsa laborum
+        modi in sit accusamus dignissimos repudiandae deleniti perferendis
+        beatae quaerat quam deserunt amet minus sequi, aperiam nisi eveniet.
+        Accusantium. Adipisci quisquam nulla consequatur neque reprehenderit
+        incidunt quia autem labore quis eaque sed, obcaecati fugiat facere
+        inventore odio. Quos quisquam enim, sapiente veritatis eius nostrum
+        quae. Quo provident dolore quae! Molestias, sapiente nesciunt. Ab,
+        quaerat voluptatem iste nisi eveniet architecto beatae facere ea quidem
+        repellendus ratione tenetur amet voluptas commodi provident at corrupti
+        iure laudantium odit. Inventore voluptates accusamus aperiam? Cum
+        laborum minus accusamus sequi inventore iure possimus, harum provident
+        corporis voluptate, obcaecati repudiandae id et eveniet dolorem,
+        distinctio porro veritatis iste repellat voluptatum? Aliquam fuga nam
+        praesentium qui atque. Mollitia id explicabo officia quisquam eligendi
+        vitae omnis obcaecati nostrum molestias! Quidem nulla laudantium iste
+        iure? Quas itaque dolor neque dolores modi id nemo, magnam ab ipsam
+        perferendis rerum alias. Molestiae odio perferendis odit, eos commodi
+        aperiam quisquam maiores vitae quas vero minus error itaque voluptatibus
+        quam corporis vel ipsam laudantium enim mollitia consequuntur provident
+        et esse quo. Vero, provident. Facilis nihil, iusto illum assumenda
+        incidunt nostrum sed officia architecto cupiditate ad soluta quod error
+        laboriosam fugit in molestiae suscipit illo. Libero dolorem quas
+        voluptate voluptatem, mollitia cupiditate pariatur optio. Dolore
+        voluptatem rem laboriosam! Id aspernatur enim veniam nulla magni,
+        possimus, voluptas totam accusantium laborum illum facere minima vitae
+        quis dolore reprehenderit ad est omnis repudiandae fugiat, sunt minus.
+        Autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+        velit ullam eveniet illum reiciendis ut reprehenderit cum! Porro odio in
+        magni corrupti, sapiente rerum possimus repellendus, impedit id nobis
+        facere? Incidunt corporis illum quae debitis natus, repudiandae
+        consequatur reprehenderit facilis atque nesciunt in tenetur commodi
+        magnam eius enim veniam, dicta, dolorem veritatis obcaecati voluptatum
+        iure necessitatibus. Illo mollitia laboriosam pariatur. Tempore
+        inventore ducimus eaque maxime, nam eos voluptatibus, qui ipsa laborum
+        modi in sit accusamus dignissimos repudiandae deleniti perferendis
+        beatae quaerat quam deserunt amet minus sequi, aperiam nisi eveniet.
+        Accusantium. Adipisci quisquam nulla consequatur neque reprehenderit
+        incidunt quia autem labore quis eaque sed, obcaecati fugiat facere
+        inventore odio. Quos quisquam enim, sapiente veritatis eius nostrum
+        quae. Quo provident dolore quae! Molestias, sapiente nesciunt. Ab,
+        quaerat voluptatem iste nisi eveniet architecto beatae facere ea quidem
+        repellendus ratione tenetur amet voluptas commodi provident at corrupti
+        iure laudantium odit. Inventore voluptates accusamus aperiam? Cum
+        laborum minus accusamus sequi inventore iure possimus, harum provident
+        corporis voluptate, obcaecati repudiandae id et eveniet dolorem,
+        distinctio porro veritatis iste repellat voluptatum? Aliquam fuga nam
+        praesentium qui atque. Mollitia id explicabo officia quisquam eligendi
+        vitae omnis obcaecati nostrum molestias! Quidem nulla laudantium iste
+        iure? Quas itaque dolor neque dolores modi id nemo, magnam ab ipsam
+        perferendis rerum alias. Molestiae odio perferendis odit, eos commodi
+        aperiam quisquam maiores vitae quas vero minus error itaque voluptatibus
+        quam corporis vel ipsam laudantium enim mollitia consequuntur provident
+        et esse quo. Vero, provident. Facilis nihil, iusto illum assumenda
+        incidunt nostrum sed officia architecto cupiditate ad soluta quod error
+        laboriosam fugit in molestiae suscipit illo. Libero dolorem quas
+        voluptate voluptatem, mollitia cupiditate pariatur optio. Dolore
+        voluptatem rem laboriosam! Id aspernatur enim veniam nulla magni,
+        possimus, voluptas totam accusantium laborum illum facere minima vitae
+        quis dolore reprehenderit ad est omnis repudiandae fugiat, sunt minus.
+        Autem.
+      </p>
+    </section>
+  </body>
+</html>

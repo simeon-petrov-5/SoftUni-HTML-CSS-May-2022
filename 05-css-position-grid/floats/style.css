@@ -1,0 +1,15 @@
+.container {
+  border: 1px dashed black;
+  padding: 20px;
+}
+
+img{
+  width: 200px;
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1,0 +1,75 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding: 20px;
+  border: 2px dashed gray;
+  position: relative;
+}
+
+.container > div {
+  padding: 30px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.container .first {
+  background-color: #466060;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 50%;
+}
+.container .second {
+  background-color: #57886c;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 30px;
+  z-index: 15;
+}
+.container .third {
+  background-color: #81a684;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 20px;
+  z-index: -1;
+}
+
+/* Grouping / Layer */
+
+.container .group {
+  position: absolute;
+  left: 70px;
+  z-index: 12;
+}
+
+.container .group > div{
+    color: black;
+}
+
+.container .group .gr1 {
+  padding: 12px;
+  background-color: #ffd5c2;
+  position: absolute;
+  top: 0px;
+  z-index: 11;
+}
+.container .group .gr2 {
+  padding: 12px;
+  background-color: #f28f3b;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  z-index: 20;
+}
+.container .group .gr3 {
+  padding: 12px;
+  background-color: #c8553d;
+  position: absolute;
+  top: 30px;
+  z-index: 12;
+}
