@@ -1,0 +1,80 @@
+html {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+/* 
+#1A1A1A - black 
+#FEBE02 - yellow
+#D8D8D8 - light gray
+*/
+
+body {
+  background-color: #d8d8d8;
+}
+
+main {
+  background-color: #1a1a1a;
+  display: grid;
+  grid-template:
+    ". pageSubtitle . . . . . ."
+    ". title title title title title  . ."
+    ". title title title title title  squareYellow ."
+    ". imgWiliams imgWiliams . about about  . squareGray"
+    ". imgWiliams imgWiliams . testimonialImg testimonialImg testimonialImg ."
+    ". infoWiliams infoWiliams . . . . .";
+
+  gap: 12px;
+  grid-auto-columns: minmax(0px, 1fr);
+  grid-auto-rows: minmax(0px, 1fr);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 1.5px;
+  color: #8c8c8c;
+  border-left: 1px solid #8c8c8c;
+  padding-left: 6px;
+  grid-area: pageSubtitle;
+}
+
+.page-title {
+  grid-area: title;
+  font-weight: 600;
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -1px;
+}
+
+.square.join {
+  grid-area: squareYellow;
+  background-color: #febe02;
+  height: 100%;
+  width: 100%;
+}
+.square.gray {
+  grid-area: squareGray;
+  background-color: #8c8c8c;
+  height: 100%;
+  width: 100%;
+}
+
+.about {
+  grid-area: about;
+}
+
+.img.kwiliams {
+  grid-area: imgWiliams;
+}
+.info.kwiliams {
+  grid-area: infoWiliams;
+}
+
+.img.testimonials {
+  grid-area: testimonialImg;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}

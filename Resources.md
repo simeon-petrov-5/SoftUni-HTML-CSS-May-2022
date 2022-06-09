@@ -14,3 +14,8 @@
 ## CSS Positioning & GRID
 - [Learn Z-Index Using a Visualization Tool
 ](https://thirumanikandan.com/posts/learn-z-index-using-a-visualization-tool)
+
+## Esercise CSS Positioning & GRID 
+- [caniuse](https://caniuse.com/)
+- [complete-guide-grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Figma - Grid layout design](https://www.figma.com/community/file/978648046298721882)

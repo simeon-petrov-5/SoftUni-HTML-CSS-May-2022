@@ -1,0 +1,35 @@
+.viewport:first-child {
+  background-color: lightgreen;
+}
+.viewport:last-child {
+  background-color: lightsalmon;
+}
+
+.viewport {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.viewport .card {
+  display: block;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+}
+
+.viewport .card img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.viewport .card i {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+}
