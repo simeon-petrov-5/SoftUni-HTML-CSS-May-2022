@@ -19,3 +19,12 @@
 - [caniuse](https://caniuse.com/)
 - [complete-guide-grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Figma - Grid layout design](https://www.figma.com/community/file/978648046298721882)
+
+## CSS Flexbox
+- [Figma Portfolio design](https://www.figma.com/community/file/1116316830579955404)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Game: Flexbox Froggy](https://flexboxfroggy.com/)
+- [Game: Flexbox adventure](https://codingfantasy.com/games/flexboxadventure)
+- [Game: Select the plates](https://flukeout.github.io)
+- [Game:GRID GARDEN](https://cssgridgarden.com/)
+- [naming conventions](https://github.com/icanteven-code/aw-some-frontend-resources#methodologies--naming-conventions)

@@ -1,0 +1,30 @@
+#work {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+    height: calc((100vh - 70px) * 0.15);
+  }
+  
+  #work .work__title {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+  
+  #work .projects {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  
+  #work .projects .projects__item {
+    border: 1px solid #9c9c9c;
+    border-radius: 8px;
+    width: 20%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
