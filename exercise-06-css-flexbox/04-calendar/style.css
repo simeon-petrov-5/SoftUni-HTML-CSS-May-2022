@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+span {
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 6px;
+}
+
+/* FLEXBOX Example */
+.flexbox {
+  max-width: 65vw;
+  margin-bottom: 6rem;
+}
+
+.flexbox {
+  display: flex;
+}
+.flexbox .week {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox .week span {
+  width: 20%;
+  background-color: lightcyan;
+}
+
+.flexbox .week span:nth-child(1),
+.flexbox .week span:nth-child(7) {
+  width: 100%;
+  background-color: lightcoral;
+}
+
+.flexbox .week span:nth-child(8),
+.flexbox .week span:nth-child(9) {
+  width: 50%;
+  background-color: lightsalmon;
+}
+
+.flexbox .notes {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox .notes span {
+  height: 50%;
+  /* flex-grow: 1; */
+}
+
+/* GRID Example */
+
+.grid {
+  max-width: 65vw;
+}
+
+.grid .first {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "workw workw workw workw workw reminders"
+    "mon tue wed thu fri reminders";
+}
+/* First row */
+.grid .first span:nth-child(1) {
+  grid-area: workw;
+}
+.grid .first span:nth-child(2) {
+  grid-area: mon;
+}
+.grid .first span:nth-child(3) {
+  grid-area: tue;
+}
+.grid .first span:nth-child(4) {
+  grid-area: wed;
+}
+.grid .first span:nth-child(5) {
+  grid-area: thu;
+}
+.grid .first span:nth-child(6) {
+  grid-area: fri;
+}
+.grid .first span:nth-child(7) {
+  grid-area: reminders;
+}
+
+/* Second row */
+.grid .second {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "wend wend  wend wend special"
+    "sat sat sun sun  special";
+}
+.grid .second span:nth-child(1) {
+  grid-area: wend;
+}
+.grid .second span:nth-child(2) {
+  grid-area: sat;
+}
+.grid .second span:nth-child(3) {
+  grid-area: sun;
+}
+.grid .second span:nth-child(4) {
+  grid-area: special;
+}

@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@300;400;700&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Joan", serif;
+}
+
+:root {
+  --clr-purple: #c0c2ff;
+  --clr-purple-light: #efe5ff;
+  --clr-black: #191919;
+  --clr-white: #ffffff;
+  --clr-gray-text: #78727f;
+  --clr-gray-bg: #f5f6f8;
+  --gradient-gray: linear-gradient(
+    90deg,
+    rgba(102, 102, 102, 1) 0%,
+    rgba(102, 102, 102, 0) 100%
+  );
+}
+
+/* COMPONENTS */
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+.btn--dark {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+
+.section {
+  padding: 96px 4rem;
+}
+
+.section-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+/* HOME */
+
+#home {
+  padding: 72px 4rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #c0c2ff,
+    #cecaff,
+    #dbd3fe,
+    #e6dcff,
+    #efe5ff
+  );
+}
+
+.home-container {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#home .title {
+  font-size: 72px;
+  width: 80%;
+  max-width: 730px;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+#home .desc {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  width: 80%;
+  max-width: 730px;
+}
+
+#home .btns-container {
+  display: flex;
+  justify-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#home .hero-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#home .comment {
+  color: var(--clr-gray-text);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#home .partners {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* FEATURES */
+
+#featrues .features__title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#featrues .benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+#featrues .benefit{
+  position: relative;
+}
+#featrues .benefit::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: var(--clr-purple);
+  opacity: 0.7;
+}
+
+#featrues .benefit *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+#featrues .benefit .benefit__img {
+  width: 30%;
+}
+
+/* CATALOG */
+
+#catalog .section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#catalog .info {
+  width: 45%;
+}
+
+#catalog .info__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#catalog .info__text {
+  color: var(--clr-gray-text);
+  margin-bottom: 1.25rem;
+}
+
+#catalog .info__link {
+  color: var(--clr-black);
+}
+
+#catalog .catalog__img {
+  width: 45%;
+  max-width: 500px;
+}
+
+/* Testimonials */
+
+#tstm .tstm__title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#tstm .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+#tstm .cards::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 65%);
+
+}
+
+#tstm .card {
+  background-color: var(--clr-gray-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#tstm .card .card__msg {
+  font-style: italic;
+}
+
+#tstm .card .card__msg-divider {
+  height: 2px;
+  width: 35%;
+  background: var(--gradient-gray);
+  margin-bottom: 1rem;
+}
+
+#tstm .card .card__about {
+  display: grid;
+  grid-template-areas:
+    "img name name name"
+    "img position position position";
+  align-items: center;
+}
+
+#tstm .card .card__about .about__img {
+  grid-area: img;
+}
+
+#tstm .card .card__about .about__name {
+  grid-area: name;
+}
+
+#tstm .card .card__about .about__position {
+  grid-area: position;
+}
+
+#tstm .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* DATA ATTR example */
+#featrues .benefitul[data-testid="benefits-second-test"]{
+  background-color: red;
+}
