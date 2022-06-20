@@ -1,0 +1,93 @@
+#svg-logo {
+  max-width: 100px;
+}
+#svg-logo .cls-2 {
+  fill: orange;
+}
+#svg-logo .cls-3 {
+  stroke: orange;
+}
+
+#mobile-btn {
+  display: none;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+#header .nav {
+  background-color: #1b1b1b;
+  max-width: 1110px;
+  width: 90%;
+  height: 70px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+}
+
+#header .nav .logo-link {
+  width: 40px;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#header .nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+#header .nav-list .link {
+  color: #9c9c9c;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 550px) {
+  #mobile-btn {
+    display: block;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile-btn svg .cls-1 {
+    fill: orange;
+  }
+
+  #header .nav {
+    position: relative;
+    justify-content: space-between;
+  }
+  #header .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    background-color: #1b1b1b;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+  }
+
+  #header .nav-list .nav-item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  #header .nav-list .link {
+    padding: 0.25rem;
+    display: block;
+  }
+}
