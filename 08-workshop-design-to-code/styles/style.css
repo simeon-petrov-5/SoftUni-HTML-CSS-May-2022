@@ -1,0 +1,249 @@
+:root {
+  --clr-primary: #e50914;
+  --clr-dark: black;
+  --clr-white: #fff;
+  --clr-grey: #222222;
+  font-size: 12px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--clr-grey);
+  color: var(--clr-white);
+}
+
+/* Components */
+.btn {
+  border: none;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Nav */
+#header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0.25rem 0.75rem;
+}
+
+#header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .navigation img {
+  height: 35px;
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 1rem;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-dark);
+  z-index: -1;
+
+  opacity: 0.5;
+}
+
+#hero .hero-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#hero .content-container {
+  text-align: center;
+}
+#hero .content-container *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+#hero .hero__title {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+#hero .hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+#hero .signup-form .input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin: 0px auto 0.75rem auto;
+}
+
+#hero .signup-form .input::placeholder {
+  color: var(--clr-grey);
+}
+
+#hero .hero__subtitle,
+#hero .form-comment {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Content sections */
+
+.content-section {
+  padding: 3rem 1.5rem;
+  background-color: var(--clr-dark);
+  margin-top: 0.5rem;
+}
+
+.content-section .info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.content-section .info .info__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-section .content__img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FAQ */
+#faq {
+  padding: 3rem 0px;
+  background-color: var(--clr-dark);
+  margin-top: 0.5rem;
+}
+
+#faq .faq__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#faq .faq-item:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+#faq .faq-item .question {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-white);
+}
+#faq .faq-item .question .icon {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+
+  /* Hero */
+  #hero .signup-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  #hero .signup-form .input {
+    margin: unset;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #hero .signup-form .btn {
+    margin: unset;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  /* Content section */
+
+  .content-section {
+    --sect-gap: 2rem;
+    --max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: var(--sect-gap);
+  }
+  .content-section > *:first-child,
+  .content-section > *:last-child {
+    width: calc(var(--max-width) / 2 - var(--sect-gap) / 2);
+  }
+
+  .content-section .info {
+    text-align: left;
+  }
+  .content-section .content__img {
+    max-width: unset;
+    margin: 0px;
+  }
+
+  /* Download */
+
+  #download {
+    flex-direction: row-reverse;
+  }
+
+  /* FAQ */
+
+  #faq .faq-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    font-size: 24px;
+  }
+  .content-section {
+    --sect-gap: 4rem;
+    --max-width: 1300px;
+    padding: 5rem 4rem;
+    justify-content: center;
+  }
+}
